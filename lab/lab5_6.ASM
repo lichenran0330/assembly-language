@@ -10,6 +10,19 @@ bb ends
 code segment
 start: 
     
+    mov ax,aa
+    mov ds,ax
+    mov ax,bb
+    mov ss,ax
+    mov sp,10h
+    mov cx,8
+    mov bx,0
+s:
+    mov ax,ds:[bx]
+    add bx,2
+    push ax
+    loop s
+
 	mov ax,4c00h
 	int 21h
 code ends
