@@ -58,6 +58,7 @@ sumn:
     mov cx,21
     mov di,0
 nee:
+;
     ; mov es:[si+164],ds:[di+0]
     mov ax,ds:[di+168]
     mov es:[si],ax
